@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 #include <windows.h>
 #include <GL/gl.h>
 #include <GL/glu.h>
@@ -16,7 +17,15 @@ class hello
 {
 public:
 	Camera* camera;
+	int screenWidth;
+	int screenHeight;
+
+	int centerX = screenWidth / 2;
+	int centerY = screenHeight / 2;
+
 	void Display();
+	void MouseHover(int x, int y);
+	void PassiveMouse(int x, int y);
 	void Timer(int preferredRefresh);
 	hello(int argc, char* argv[]);
 	~hello(void);
@@ -24,6 +33,8 @@ public:
 	void DrawScaleneTriangle();
 	void Update();
 	void Keyboard(unsigned char key, int x, int y);
+	void DrawCube();
+	void DrawWireSphere(float rotation);
 private:
 	float rotation;
 };

@@ -18,6 +18,18 @@ namespace GLUTCallbacks
 			helloo -> Display();
 		}
 	}
+	void Keyboard(unsigned char key, int x, int y)
+	{
+		helloo->Keyboard(key, x, y);
+	}
+	void MouseHover(int x, int y)
+	{
+		helloo->MouseHover(x, y);
+	}
+	void PassiveMouse(int x, int y)
+	{
+		helloo->PassiveMouse(x, y);
+	}
 	void Timer(int preferredRefresh)
 	{
 		int updateTime = glutGet(GLUT_ELAPSED_TIME);
