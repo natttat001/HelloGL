@@ -5,23 +5,21 @@
 #include <GL/glu.h>
 #include "GL/freeglut.h"
 #include "GLUTCallbacks.h"
+#include "Structures.h"
+#include "Cube.h"
 #define REFRESHRATE 16
 
-struct Vector3 { float x, y, z; };
-struct Camera
-{
-	Vector3 eye, center, up;
-};
 
 class hello
 {
 public:
 	Camera* camera;
+	Cube* cube;
 	int screenWidth;
 	int screenHeight;
 
-	int centerX = screenWidth / 2;
-	int centerY = screenHeight / 2;
+	int centerX;
+	int centerY;
 
 	void Display();
 	void MouseHover(int x, int y);
@@ -33,7 +31,6 @@ public:
 	void DrawScaleneTriangle();
 	void Update();
 	void Keyboard(unsigned char key, int x, int y);
-	void DrawCube();
 	void DrawWireSphere(float rotation);
 private:
 	float rotation;

@@ -1,5 +1,5 @@
 ﻿  hello.cpp
-C:\Users\tuan.na5\source\repos\GLshit\gl\gl\hello.cpp(150,14): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\tuan.na5\source\repos\GLshit\gl\gl\hello.cpp(146,14): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
   gl.vcxproj -> C:\Users\tuan.na5\source\repos\GLshit\gl\x64\Debug\gl.exe
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.
